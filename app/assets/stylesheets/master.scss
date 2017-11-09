@@ -10,6 +10,7 @@ body {
   font-family: 'Cormorant Infant';
   font-size: 100%;
   text-align: center; 
+  color: black;
 }
 
 .event{
@@ -38,8 +39,23 @@ body {
 }
 
 h1 {
-  font-size: 3.5vw;
   height: 90%;
 }
 
+ul {
+  list-style: none;
+}
+
+hr {
+  color: black;
+  height: 1px;
+  background-color: black;
+}
+
+.seasons p{  
+}
+
+.seasons span {
+  font-weight: bold;
+}
 
