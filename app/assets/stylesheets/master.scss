@@ -41,6 +41,14 @@ h1 {
   height: 90%;
 }
 
+h2 {
+  opacity: 1;
+}
+
+p {
+ opacity: 1; 
+}
+
 h3 {
   font-size: 17px;
   border-radius: 25px;
@@ -78,4 +86,15 @@ hr {
 
 .shadow-box{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.black-box {
+  border-radius: 25px;
+  background-color:  black;
+  color: white;
+  opacity: .8;
+  margin: 10px;
+  padding: 10px;
+  max-width: 95%;
+
 }
