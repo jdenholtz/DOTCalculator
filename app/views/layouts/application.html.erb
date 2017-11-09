@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Dotcalc</title>
+    <title>DOTCalculator</title>
     <%= csrf_meta_tags %>
-
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Khand" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <div id="flex-content-container">
+      <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse text-center">
+        <div class="center-me">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="text-center">New Age War Presents</h1>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
     <%= yield %>
   </body>
 </html>
