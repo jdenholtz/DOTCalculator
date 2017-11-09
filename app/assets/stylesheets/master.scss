@@ -6,16 +6,12 @@ body {
   font-size: 100%;
   text-align: center; 
   color: black;
-}
-
-.full-bkrnd {
   background: image_url('dot.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-
 .event{
   font-family: 'Khand', sans-serif;
 }
