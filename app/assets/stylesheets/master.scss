@@ -43,6 +43,14 @@ h1 {
 
 h3 {
   font-size: 17px;
+  border-radius: 25px;
+  background-color:  black;
+  color: white;
+  opacity: .8;
+}
+
+h3 span {
+  opacity: 1;
 }
 
 ul {
@@ -68,7 +76,6 @@ hr {
   bottom:0px;
 }
 
-.img1 {
-  max-width: 100%;
-  height: auto;
-  }
+.shadow-box{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
