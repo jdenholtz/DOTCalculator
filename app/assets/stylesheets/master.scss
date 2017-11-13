@@ -75,6 +75,18 @@ hr {
   background-color: black;
 }
 
+#dot-rule {
+   background: image_url('dot-rule.png') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 28px;
+  margin: 0;
+  paddong: 0;
+  
+}
+
 
 .season-head span{
    font-size: 1.2rem;
