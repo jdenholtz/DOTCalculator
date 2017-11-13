@@ -35,9 +35,12 @@ h1 {
   height: 90%;
 }
 
-h2 {
+h1, h2{
+  text-shadow: 2px 2px 4px grey;
   opacity: 1;
+
 }
+
 h2 span {
   font-size: .9rem;
 }
@@ -48,8 +51,9 @@ p {
 
 p span {
   font-size: 2rem;
-  line-height: 70%
-  
+  line-height: 70%;
+  font-family: "Cormorant Infant";
+  text-shadow: 2px 2px 4px #333333;
 }
 
 h3 {
