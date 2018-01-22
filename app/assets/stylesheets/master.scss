@@ -49,6 +49,10 @@ p {
  opacity: 1; 
 }
 
+a {
+  font-size: 1.2rem;
+}
+
 p span {
   font-size: 2rem;
   line-height: 70%;
@@ -114,3 +118,14 @@ hr {
 
 }
 
+#switchGuide {
+  display: none;
+}
+
+#damage {
+ display: none; 
+}
+
+#calculator {
+ display: none; 
+}
