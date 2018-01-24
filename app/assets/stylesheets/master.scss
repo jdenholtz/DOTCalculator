@@ -72,6 +72,12 @@ h3 span {
   opacity: 1;
 }
 
+h4 {
+  font-size: 1.1rem;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 
 hr {
   color: black;
@@ -128,4 +134,21 @@ hr {
 
 #calculator {
  display: none; 
+}
+
+#troop {
+ display: none; 
+}
+
+#troop span {
+  
+}
+
+.toggelBtn {
+  border-radius:  8px;
+  border: 1px solid #FFF3D7;
+  color: white;
+  background-color: black;
+  box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size:  0.8rem;
 }

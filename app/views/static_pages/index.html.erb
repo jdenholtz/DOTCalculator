@@ -79,7 +79,7 @@
 
   <div class="col-10 offset-1">
     <h2>Titan, Troop, and Relic Calculator</h2>
-     <button onclick="hideCalculator()">Hide/Show</button>
+     <button class="toggelBtn" onclick="hideCalculator()">Hide/Show</button>
      <br />
 
     <div id="calculator">
@@ -99,7 +99,7 @@
   <div class="col-10 offset-1">
     <br />
     <h2>Damage, Resistance, Armor, and Armor Piercing Explained</h2>
-     <button onclick="hideDamage()">Hide/Show</button>
+     <button class="toggelBtn" onclick="hideDamage()">Hide/Show</button>
      <br />
 
     <div id="damage">
@@ -118,9 +118,63 @@
   </div>
 
   <div class="col-10 offset-1">
+    <h2>Troop Attack Priority</h2>
+     <button class="toggelBtn" onclick="hideTroop()">Hide/Show</button>
+     <br />
+
+    <div id="troop">
+      <br />
+      <p>
+        All of the troops have unique attack priority, they prefer to attack some units over others.  By knowing troop attack priority you can predict what troops will do in battle.
+      </p>
+   
+      <p>
+        <h4>Militia target</h4>
+        Grenadiers > Archers > Titan, Militia > Panthers > Goliaths, Spearmen, Imperials
+      </p>
+
+      <p>
+        <h4>Archers target</h4>
+        Titan > All Units
+      </p>
+
+      <p>
+        <h4>Spearmen targets</h4>
+        Milita > Panthers > Goliaths > Titan, Spearmen > Imperials > Archers > Grenadiers
+      </p>
+
+      <p>
+        <h4>Grenadiers target</h4>
+        Archers, Grenadiers, Panthers, Titan > Militia, Imperials, Spearmen > Goliaths
+      </p>
+
+      <p>
+        <h4>Panthers target</h4>
+        Archers, Grenadiers > Militia > Ranger > Spearmen, Imperials, Goliaths, Panthers, non-Ranger Titan
+      </p>
+
+      <p>
+        <h4>Imperials target</h4>
+        Panthers > Militia, Archers, Spearmen > Grenadiers, Imperials > Goliaths > Titan
+      </p>
+      
+      <p>
+        <h4>Goliaths target</h4>
+        Militia, Archers > Spearmen, Panthers > Titan, Goliaths > Imperials > Grenadiers
+      </p>
+      <br />
+
+    </div>
+  </div>
+  <br />
+
+  <div class="col-12" id="dot-rule">
+  </div>
+
+  <div class="col-10 offset-1">
     <br />
     <h2>Guide: Switching Alliances</h2>
-    <button onclick="hideSwitch()">Hide/Show</button>
+    <button class="toggelBtn" onclick="hideSwitch()">Hide/Show</button>
     <br />
     <div id="switchGuide"> 
       <br />
@@ -189,25 +243,31 @@
       </div>
 
     </div>
+  </div>
     <br />
 
   <div class="col-12" id="dot-rule">
   </div>
 
-  <div class="row">
-    <br />
-    <div class="col-12 col-md-6">
-      <br />      
-      <a href="http://www.dawnoftitans.com/"><%= image_tag("dot-button.png", class: 'img-fluid shadow-box') %></a>
+
+  <div class="col-10 offset-1">
+    <div class="row">
+      <br />
+      <div class="col-12 col-md-6">
+        <br />      
+        <a href="http://www.dawnoftitans.com/"><%= image_tag("dot-button.png", class: 'img-fluid shadow-box') %></a>
+        <br />
+      </div>
+      <div class="col-12 col-md-6">
+        <br />
+        <a href="https://dawnoftitans.gamepedia.com/Dawn_of_Titans_Wiki"><%= image_tag("need-help-wiki-button.png", class: 'shadow-box img-fluid') %></a>
+        <br />
+      </div>
       <br />
     </div>
-    <div class="col-12 col-md-6">
-      <br />
-      <a href="https://dawnoftitans.gamepedia.com/Dawn_of_Titans_Wiki"><%= image_tag("need-help-wiki-button.png", class: 'shadow-box img-fluid') %></a>
-      <br />
-    </div>
-    <br />
   </div>
+
+
   <br />
 </div>
 
@@ -230,8 +290,18 @@
         x.style.display = "block";
     }
   }
+
   function hideCalculator() {
     var x = document.getElementById("calculator");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+  }
+
+  function hideTroop() {
+    var x = document.getElementById("troop");
     if (x.style.display === "block") {
         x.style.display = "none";
     } else {
