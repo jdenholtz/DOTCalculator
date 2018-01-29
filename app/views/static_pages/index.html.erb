@@ -12,16 +12,70 @@
     <br />
     <h2>News</h2>
     <p>
-      We are staying in New Age War and pushing hard for VP in elite league!
+      We are starting to grow both alliances.  Our main alliance is currently in champion league to see what where we stand.  Our alt alliance is holding in Platinum league, this is where you should be if you are struggling in champion league.
     </p>
     <p>
-      Welcome new members! After a week of farming and building looking forward to batteling together for victory.
+      With members now in two alliances everyone should join our Line chat.  It's a great way for us all to be able to chat in the same place!  It also allows for photo/video/link sharing which is a great way to share information and strategy.  There are instructions below on how to join.
     </p>
     <p>
-      Weekly minimums are 500,000 vp OR 40 Battles won.  Dont forget to do your daily Quests, Titan Arena, and Titan Monument!
+      Weekly minimums are 500,000 vp OR 50 Battles won.  Dont forget to do your daily Quests, Titan Arena, and Titan Monument!
     </p>
     <br />
   </div>
+  <div class="col-12" id="dot-rule">
+  </div>
+
+  <div class="col-10 offset-1">
+    <h2>Joining Our Line Chatroom</h2>
+     <button class="toggelBtn" onclick="hideLine()"><span>Hide/Show</span></button>
+     <br />
+
+    <div id="line">
+      <br />
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <%= image_tag("line.png", class: 'img-fluid shadow-box') %>
+          <p>
+            Install the Line app from Google Play or the App Store
+          </p>
+          <p>
+            This link should allow you to join our channel, click on it and select "Line" to open it.
+            <br />
+            <a href="http://line.me/R/ti/g/ho26wzCVZD">http://line.me/R/ti/g/ho26wzCVZD</a>
+            If the link doesnt work...
+          </p>
+          <br />
+        </div>
+        <div class="col-12 col-md-6">
+          <%= image_tag("lineSearch.png", class: 'img-fluid shadow-box') %>
+          <p>
+            You can find us by searching.  Tap on the people icon, then the search icon.
+          </p>
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <%= image_tag("linePeople.png", class: 'img-fluid shadow-box') %>
+          <p class="text-center">
+            In the search field enter "yzarr" or "mustacheo_gan".  Tap "search for LINE ID ...".
+          </p>
+        </div>
+        <br />
+        <div class="col-12 col-md-6">
+          <%= image_tag("lineChat.png", class: 'img-fluid shadow-box') %>
+          <p>
+            Tap on chat to message one of us for an invite.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <br />
+
+
 
   <div class="col-12" id="dot-rule">
   </div>
@@ -32,27 +86,27 @@
       <br />
       <p>
         <span>This Season</span><br />
-        (01/22 - 01/28)
+        (01/29 - 02/07)
       </p>
       <div class="season-head">
         <p>
           <span>Alliance:</span>  New Age War<br />
-          <span>League:</span> Elite <br/ >
-          <span>Goal:</span>  Victory
+          <span>League:</span> Champion <br/ >
+          <span>Goal:</span>  Victory?
         </p>
       </div>
     </div>
     <div class="black-box shadow-box">
       <br />
       <p>
-        <span>Next Season</span><br />
-        (01/29 - 02/04)
+        <span>This Season</span><br />
+        (01/29 - 02/07)
       </p>
       <div class="season-head">
         <p>
-          <span>Alliance:</span>  Undecided<br />
-          <span>League:</span> ??? <br/ >
-          <span>Goal:</span>  ???
+          <span>Alliance:</span>  New Age War2<br />
+          <span>League:</span> Platinum <br/ >
+          <span>Goal:</span>  Growth
       </div>
     </div>
     <br/>
@@ -311,4 +365,12 @@
     }
   }
   
+  function hideLine() {
+    var x = document.getElementById("line");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+  }
 </script>
