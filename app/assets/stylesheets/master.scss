@@ -144,6 +144,18 @@ hr {
  display: none; 
 }
 
+#lineBtn {
+  
+  background-color: #07BF3F;
+  border: none;
+  box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#lineBtn a {
+  color: white;
+}
+
+
 .toggelBtn {
   border-radius:  8px;
   border: 1px solid #FFF3D7;
